@@ -1,7 +1,24 @@
+from unicodedata import normalize
+
+
+def apara_ponto_flutuante(numero_a_aparar):
+    if numero_a_aparar.is_integer():
+        return int(numero_a_aparar)
+    else:
+        return numero_a_aparar
+
+
 def calcula_percentual(parte, total):
     percentual = parte / total * 100
 
     return percentual
+
+
+def exibe_menu(opcoes):
+    print("Menu:")
+    for opcao in opcoes:
+        print(opcao)
+    return opcoes
 
 
 def formata_moeda_br(valor):
@@ -23,3 +40,9 @@ def formata_numero_com_pontos(numero):
 
 def inverte_numero(numero_a_inverter):
     return int(str(numero_a_inverter)[::-1])
+
+
+def remove_diacriticos(palavra):
+    forma_normalizada = normalize('NFKD', palavra)
+    palavra_em_ascii = forma_normalizada.encode('ASCII', 'ignore')
+    return palavra_em_ascii.decode()
