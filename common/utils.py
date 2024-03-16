@@ -15,7 +15,7 @@ def calcula_percentual(parte, total):
 
 
 def exibe_menu(opcoes):
-    print("Menu:")
+    print("Insira:")
     for opcao in opcoes:
         print(opcao)
     return opcoes
