@@ -1,4 +1,3 @@
-from typing import List
 from datetime import date
 
 from aula_04.editora.pessoa import Pessoa

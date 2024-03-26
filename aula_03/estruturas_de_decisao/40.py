@@ -58,7 +58,7 @@ def analisa_rodada(modo_de_jogo, jogada_do_jogador_1, jogada_do_jogador_2):
     match jogada_do_jogador_1:
         case 'pedra':
             if jogada_do_jogador_1 == jogada_do_jogador_2:
-                print(f"!!! {'EMPATE' if modo_de_jogo == 2 else 'EMPATE'} !!!")
+                print("!!! EMPATE !!!")
             elif jogada_do_jogador_2 == "papel":
                 print(f"!!! {'VITÓRIA do JOGADOR 2' if modo_de_jogo == 2 else 'DERROTA'} !!!")
             else:
@@ -66,7 +66,7 @@ def analisa_rodada(modo_de_jogo, jogada_do_jogador_1, jogada_do_jogador_2):
 
         case 'papel':
             if jogada_do_jogador_1 == jogada_do_jogador_2:
-                print(f"!!! {'EMPATE' if modo_de_jogo == 2 else 'EMPATE'} !!!")
+                print("!!! EMPATE !!!")
             elif jogada_do_jogador_2 == "tesoura":
                 print(f"!!! {'VITÓRIA do JOGADOR 2' if modo_de_jogo == 2 else 'DERROTA'} !!!")
             else:
@@ -74,7 +74,7 @@ def analisa_rodada(modo_de_jogo, jogada_do_jogador_1, jogada_do_jogador_2):
 
         case 'tesoura':
             if jogada_do_jogador_1 == jogada_do_jogador_2:
-                print(f"!!! {'EMPATE' if modo_de_jogo == 2 else 'EMPATE'} !!!")
+                print("!!! EMPATE !!!")
             elif jogada_do_jogador_2 == "tesoura":
                 print(f"!!! {'VITÓRIA do JOGADOR 2' if modo_de_jogo == 2 else 'DERROTA'} !!!")
             else:
